@@ -17,6 +17,10 @@ section {
     padding: 5px 10px;
 }
 
+.results {
+    text-align: center;
+}
+
 .results h2 {
     margin: 25px auto;
     padding: 15px;
@@ -24,8 +28,9 @@ section {
     border-bottom: 1px solid #9fa9a3;
 }
 
-.results, .map {
-    text-align: center;
+.results h3 {
+    margin: 15px auto;
+    background-color: #9fa9a3;
 }
 
 .inputResults {
@@ -33,10 +38,14 @@ section {
     border-style: solid;
     border-width: 3px;
     width: 40%;
-    margin: 30px auto;
+    margin: 15px auto;
     box-shadow: 0 0 10px rgba(159,169,163,1);
     border-radius: 15px;
     border-color: #9fa9a3;
+}
+
+.address, .miles {
+    text-align: left;
 }
 
 iframe {
@@ -50,6 +59,7 @@ iframe {
     box-shadow: 0 0 10px rgba(159,169,163,1);
     border-radius: 15px;
     border-color: #9fa9a3;
+    align-items: left;
 }
 
 footer {
