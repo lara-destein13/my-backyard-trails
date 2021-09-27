@@ -34,6 +34,7 @@ h2 {
     background-color: #9fa9a3;
     padding: 10px;
     width: 30%;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -42,6 +43,7 @@ p {
     font-size: 30px;
     color: black;
     width: 35%;
+    margin-top: -15px;
     margin-left: auto;
     margin-right: auto;  
 }
@@ -50,7 +52,7 @@ p {
     background-color: #cccccc;
     background-size: cover;
     margin-top: -5px;
-    height: 445px;
+    height: 500px;
     width: 750px;
     margin-left: auto;
     margin-right: auto;
