@@ -5,7 +5,8 @@
 }
 
 body {
-    background-image: url(../assets/Creative/reference/hiking_website_pic.jpg);
+    background-color: #e3e0cc;
+    background-image: url("../assets/Creative/reference/hiking_website_pic.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -85,10 +86,13 @@ section .resultsContainer, .mapContainer{
     background-color: #9fa9a3;
 }
 
-/*.mapContainer {
+.mapContainer {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
-}*/
+}
 
 .address-miles {
     margin: auto;
@@ -97,22 +101,21 @@ section .resultsContainer, .mapContainer{
 }
 
 .address, .miles {
-    margin: 0px 5px;
-    text-align: center;
-    width: 20%;
+   display: flex;
+   flex-direction: column;
 }
 
 .map {
     display: flex;
-    flex-direction: column;
+    flex-direction: right;
 }
 
 iframe {
     height: 500px;
+    width: 500px;
     padding: 10px;
     border-style: solid;
     border-width: 3px;
-    width: 40%;
     margin: 15px auto;
     box-shadow: 0 0 10px rgba(159,169,163,1);
     border-radius: 0px;
