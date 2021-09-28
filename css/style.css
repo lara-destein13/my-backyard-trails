@@ -8,7 +8,9 @@ header {
     padding: 20px 35px;
     background-color: #9fa9a3;
 }
-img {
+
+header img {
+    margin: 5px auto;
     height: 60px;
 }
 
