@@ -20,10 +20,12 @@ function getAddress() {
 			}
 		})
 		.then(function(response) {
+			if (response.ok) {
     		response.json().then(function(data) {
-      		console.log(data);
+      		//displayTrials(data.name)
+			console.log(data);
 			})
-		})
+		}})
 		.catch(err => {
 			console.error(err);
 		});
