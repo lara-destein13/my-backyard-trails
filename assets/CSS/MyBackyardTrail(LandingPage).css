@@ -48,7 +48,7 @@ p {
     margin-left: auto;
     margin-right: auto;  
 }
-.startAdventure {
+/* .startAdventure {
     background-image: url("https://ewscripps.brightspotcdn.com/dims4/default/28bb7ae/2147483647/strip/true/crop/640x360+0+60/resize/1280x720!/quality/90/?url=https%3A%2F%2Fmediaassets.abc2news.com%2Fphoto%2F2016%2F07%2F28%2FCromwell1_1469742574417_43297141_ver1.0_640_480.jpg");
     background-color: #cccccc;
     background-size: cover;
@@ -57,18 +57,33 @@ p {
     width: 750px;
     margin-left: auto;
     margin-right: auto;
-}
-.startBTN {
-    /* margin-left: auto;
-    margin-right: auto; */
-    width: 30%;
+} */
+
+/* fix position so that it stays centered no matter screen size */
+/* .startBTN {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
     height: 120px;
     font-size: 40px;
     color: black;
     background-color: darkgrey;
     position: absolute;
-    left: 675px;
-    top: 650px;
+    margin-left: 30%;
+    margin-top: 75%;
+    border: black solid 5px;
+    border-radius: 20px;
+} */
+
+.startBTN {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 400px;
+    height: 120px;
+    font-size: 40px;
+    color: black;
+    background-color: darkgrey;
     border: black solid 5px;
     border-radius: 20px;
 }
