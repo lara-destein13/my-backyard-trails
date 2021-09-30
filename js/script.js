@@ -1,10 +1,12 @@
 var trailsContainerEl = document.querySelector('#trails-container');
 var displayTrails = function(trails) {
+
+	console.log("trails", trails)
 	for (var i=0; i < trails.length; i++) {
 		var trailname = trails[i].name;
 		var trailsEl = document.createElement('span');
 		trailsEl.textContent = trailname;
-		trailsContainerEl.appendChild(trailsEl);
+		trailsContainerEl.appendChild("trailsEl");
 	};
 };
 	
@@ -30,9 +32,8 @@ function getAddress() {
 		})
 		.then(function(response) {
 			if (response.ok) {
-    			response.json().then(function(data) {
-			 	console.log(data);
-				displayTrails(data);
+    			response.json().then(function(fetchedData) {
+				displayTrails(fetchedData.data);
 				})
 			}
 			else {
@@ -62,9 +63,9 @@ $("#coords").click(function() {
 	})
 	.then(function(response) {
 			if (response.ok) {
-				response.json().then(function(data) {
+				response.json().then(function(fetchedData) {
 				console.log(data);
-				displayTrails(data);
+				displayTrails(fetchedData.data);
 				})
 			}
 			else {
