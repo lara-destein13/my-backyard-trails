@@ -1,12 +1,17 @@
 var trailsContainerEl = document.querySelector('#trails-container');
 var displayTrails = function(trails) {
+	if (trails.length === 0) {
+		trailsContainerEl.textContent = "No Trails Close By";
+		return;
+	}
 
-	console.log("trails", trails)
+	 console.log("trails", trails)
 	for (var i=0; i < trails.length; i++) {
 		var trailname = trails[i].name;
-		var trailsEl = document.createElement('span');
+		var trailsEl = document.createElement('a');
+		trailsEl.setAttribute("href", trails[i].url)
 		trailsEl.textContent = trailname;
-		trailsContainerEl.appendChild("trailsEl");
+		trailsContainerEl.appendChild(trailsEl);
 	};
 };
 	
@@ -64,7 +69,7 @@ $("#coords").click(function() {
 	.then(function(response) {
 			if (response.ok) {
 				response.json().then(function(fetchedData) {
-				console.log(data);
+				
 				displayTrails(fetchedData.data);
 				})
 			}
