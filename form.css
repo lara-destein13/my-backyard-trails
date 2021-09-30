@@ -44,6 +44,18 @@ header h1 {
     background-color: #9fa9a3;
 }
 
+.mapBtn {
+    margin: 15px auto;
+    padding: 5px;
+    background-color: #e3e0cc;
+}
+
+.mapBtn:hover {
+    background-color: #9fa9a3;
+    font-style: italic;
+    color: white;
+}
+
 .row {
     padding: 10px;
     font-size: 1.5em;
