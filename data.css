@@ -1,0 +1,11 @@
+#all-rows {
+    background-color: lightgray;
+}
+
+#container {
+    width: 400px;
+}
+
+.mbt-row {
+    padding: 10px;
+}
