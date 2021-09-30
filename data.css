@@ -25,3 +25,19 @@
 #spacer {
     width: 10%;
 }
+
+#age-input {
+    background-color: lightblue;
+}
+
+#age-spacer {
+    width: 10%;
+}
+
+#weight-input {
+    background-color: lightpink;
+}
+
+#weight-spacer {
+    width: 10%;
+}
