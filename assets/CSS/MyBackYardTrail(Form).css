@@ -1,11 +1,80 @@
-.row {
-    /* background-color: limegreen; */
+#container {
+    background-color: #e3e0cc;; 
+    width: 50%;
+    text-align: center;
+}
+/* .mbt-row {
+    margin-left: auto;
+    margin-right: auto;
+} */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+/* .d-flex {
+    margin-left: auto;
+    margin-right: auto;  
+} */
+
+#header {
+    margin-top: -15px;
+    font-size: 4em;
+    justify-content: end;
+    background-color: #9fa9a3;
+    padding: 10px;
+}
+#age-input, #weight-input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 30px;
+    background-color: lightgray;
+    border: black solid 3px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#age-header, #weight {
+    font-size: 2em;
+    text-align: center;
+}
+
+#height {
+    display: flex;
+    justify-content: center;
+}
+
+#height-feet-label {
+    text-align: center;
+    font-size: 24px;
+}
+
+#feet-selector, #inches-selector {
+    width: 120px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+    border: black solid 2px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/* .row {
     padding: 10px;
     font-size: 3em;
     font-weight: bold;
-}
+} */
 
-#form {
+/* #form {
     width: 45%;  
     margin-left: auto;
     margin-right: auto;
@@ -14,19 +83,19 @@
     text-align:center;
     margin-top: -15px;
     background-color: #e3e0cc;
-}
+} */
 
 /* #page-2 {
     text-align: center;
 } */
 
-#title {
+/* #title {
    background-color: #9fa9a3; 
    font-size: 4em;
    padding: 10px;
    display: flex;
    flex-direction: row;
-}
+} */
 /* header {
     font-size: 4em;
 }*/
@@ -72,7 +141,7 @@
     border: black solid 3px;
 }*/
 
-#submit-button {
+/* #submit-button {
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
@@ -86,4 +155,4 @@
 
 #submit-button:hover {
     background-color: lightgrey;
-}
+} */
