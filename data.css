@@ -9,3 +9,19 @@
 .mbt-row {
     padding: 10px;
 }
+
+#height {
+    background-color: lightgreen;
+}
+
+#height-feet {
+    border: 2px solid red;
+}
+
+#height-inches {
+    border: 2px solid blue;
+}
+
+#spacer {
+    width: 10%;
+}

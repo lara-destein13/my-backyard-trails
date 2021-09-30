@@ -19,13 +19,30 @@
 
 <body>
     <div id="container">
-        <div id="all-rows" class="d-flex flex-column">
+        <div id="all-rows" class="d-flex flex-column"></div>
           <div id="header" class="mbt-row">My Backyard Trails</div>
           <div id="age-header" class="mbt-row">Age</div>
           <div id="age-input" class="mbt-row">Input</div>
-          <div id="height-feet" class="mbt-row">Height(ft)</div>
+          <div id="height" class="mbt-row d-flex flex-row">
+            <div id="height-feet" class="d-flex flex-column">
+                <div id="height-feet-label">FT</div>    
+                <div id="height-feet-input">
+                    <input type="text">
+                </div>    
+            </div>
+            <div id="spacer" class="d-flex flex-column"></div> 
+            <div id="height-inches" class="d-flex flex-column">
+                <div id="height-feet-label">IN</div>    
+                <div id="height-feet-input">
+                    <input type="text">
+                </div>   
+            </div>
+          </div>
           <div id="height-input-ft" class="mbt-row">Input</div>
-          <div id="height-inches" class="mbt-row">Height(in)</div>
+          <div id="height-inches" class="mbt-row d-flex flex-row">Height(in)
+            <div id="height-feet-left" class="d-flex flex-column">left</div>
+            <div id="height-feet-right" class="d-flex flex-column">right</div>
+          </div>
           <div id="height-input-in" class="mbt-row">Input</div>
           <div id="weight" class="mbt-row">Weight</div>
           <div id="weight-input" class="mbt-row">Input</div>
@@ -33,6 +50,12 @@
           <div id="beginning-bpm-input" class="mbt-row">Input</div>
           <div id="ending-bpm" class="mbt-row">ending bpm</div>
           <div id="ending-bpm-input" class="mbt-row">Input</div>
+          <div id="results-paragraph" class="mbt-row">
+              <p>Results are in. Continue by inputting your home 
+                  address and get connected to hiking trails near 
+                  you.
+              </p>
+          </div>
           <div id="address" class="mbt-row">address</div>
           <div id="address-input" class="mbt-row">Input</div>
           <div id="miles-away" class="mbt-row">miles away</div>
