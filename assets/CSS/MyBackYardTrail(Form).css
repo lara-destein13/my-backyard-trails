@@ -1,0 +1,173 @@
+#container {
+    background-color: #e3e0cc;; 
+    width: 50%;
+    text-align: center;
+}
+/* .mbt-row {
+    margin-left: auto;
+    margin-right: auto;
+} */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+/* .d-flex {
+    margin-left: auto;
+    margin-right: auto;  
+} */
+
+#header {
+    margin-top: -15px;
+    font-size: 4em;
+    justify-content: end;
+    background-color: #9fa9a3;
+    padding: 10px;
+}
+#age-input, #weight-input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 30px;
+    background-color: lightgray;
+    border: black solid 3px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#age-header, #weight {
+    font-size: 2em;
+    text-align: center;
+}
+
+#height {
+    display: flex;
+    justify-content: center;
+}
+
+#height-feet-label {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: -10px;
+}
+
+#feet-selector, #inches-selector {
+    width: 120px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+    border: black solid 2px;
+    border-radius: 5px;
+}
+
+#submit-button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    font-size: 50px;
+    width: 50%;
+    background-color: grey;
+    padding: 5px;
+    border: solid black 5px;
+    border-radius: 5px;
+}
+
+#submit-button:hover {
+    background-color: lightgrey;
+}
+
+
+
+
+
+
+
+
+/* .row {
+    padding: 10px;
+    font-size: 3em;
+    font-weight: bold;
+} */
+
+/* #form {
+    width: 45%;  
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    margin-top: -15px;
+    background-color: #e3e0cc;
+} */
+
+/* #page-2 {
+    text-align: center;
+} */
+
+/* #title {
+   background-color: #9fa9a3; 
+   font-size: 4em;
+   padding: 10px;
+   display: flex;
+   flex-direction: row;
+} */
+/* header {
+    font-size: 4em;
+}*/
+
+/* logo {
+    height: 100px;
+    width: 100px;
+} */
+
+/* h2 {
+    font-size: 3em;
+    font-weight: bold;
+} */
+
+/* h3 {
+    font-size: 2em;
+    font-weight: bold;
+} */
+
+/* input {
+    width: 50%;
+    height: 75px;
+    background-color: lightgrey;
+    border: black solid 3px;
+}*/
+
+/* .height {
+    width:40%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly 
+}*/
+
+/* .feet, .inches {
+    display: flex;
+    flex-direction: column; 
+}*/
+
+/* select {
+    width: 20%;
+    height: 75px;
+    background-color: lightgrey;
+    border: black solid 3px;
+}*/
+
+/* #submit-button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    font-size: 50px;
+    width: 50%;
+    background-color: grey;
+    padding: 5px;
+    border: solid black 5px;
+    border-radius: 5px;
+}
+
+#submit-button:hover {
+    background-color: lightgrey;
+} */
