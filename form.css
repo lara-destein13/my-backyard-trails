@@ -40,6 +40,18 @@ header h1 {
     text-align: center;
 }
 
+.submitBtn {
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 1em;
+    background-color: #9fa9a3;
+}
+
+.submitBtn:hover {
+    font-style: italic;
+    color: white;
+}
+
 .address h3, .miles h3 {
     background-color: #9fa9a3;
 }
@@ -47,11 +59,10 @@ header h1 {
 .mapBtn {
     margin: 15px auto;
     padding: 5px;
-    background-color: #e3e0cc;
+    background-color: #9fa9a3;
 }
 
 .mapBtn:hover {
-    background-color: #9fa9a3;
     font-style: italic;
     color: white;
 }
