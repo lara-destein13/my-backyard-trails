@@ -1,4 +1,13 @@
-
+var trailsContainerEl = document.querySelector('#trails-container');
+var displayTrails = function(trails) {
+	for (var i=0; i < trails.length; i++) {
+		var trailname = trails[i].name;
+		var trailsEl = document.createElement('span');
+		trailsEl.textContent = trailname;
+		trailsContainerEl.appendChild(trailsEl);
+	};
+};
+	
 // Use entered address to find trails
 function getAddress() {
 	var address = $('#address').val();
@@ -21,11 +30,15 @@ function getAddress() {
 		})
 		.then(function(response) {
 			if (response.ok) {
-    		response.json().then(function(data) {
-      		//displayTrials(data.name)
-			console.log(data);
-			})
-		}})
+    			response.json().then(function(data) {
+			 	console.log(data);
+				displayTrails(data);
+				})
+			}
+			else {
+				alert("we gots a problem");
+			}
+		})
 		.catch(err => {
 			console.error(err);
 		});
@@ -34,27 +47,33 @@ function getAddress() {
 
 // Use the user's current location to find trails
 $("#coords").click(function() {
-	navigator.geolocation.getCurrentPosition( geolocationCallback );  
-//});
-function geolocationCallback( position ){
-  let lat = position.coords.latitude;
-  let lng = position.coords.longitude;
-  let trailapi = "https://trailapi-trailapi.p.rapidapi.com/trails/explore/?lat=" + lat + "&lon=" + lng;
-  fetch(trailapi, {
-	  "method": "GET",
-	  "headers": {
-	  "x-rapidapi-host": "trailapi-trailapi.p.rapidapi.com",
-	  "x-rapidapi-key": "2d78d93295msh3f3b2883bfcb2f3p1482cejsna6723b0a74ea"
-	  }
-  })
-  .then(function(response) {
-	  response.json().then(function(data) {
-		console.log(data);
-	  })
-  })
-  .catch(err => {
-	  console.error(err);
-  });
-}
+	navigator.geolocation.getCurrentPosition(geolocationCallback);  
+
+	function geolocationCallback(position){
+	let lat = position.coords.latitude;
+	let lng = position.coords.longitude;
+	let trailapi = "https://trailapi-trailapi.p.rapidapi.com/trails/explore/?lat=" + lat + "&lon=" + lng;
+	fetch(trailapi, {
+		"method": "GET",
+		"headers": {
+		"x-rapidapi-host": "trailapi-trailapi.p.rapidapi.com",
+		"x-rapidapi-key": "2d78d93295msh3f3b2883bfcb2f3p1482cejsna6723b0a74ea"
+		}
+	})
+	.then(function(response) {
+			if (response.ok) {
+				response.json().then(function(data) {
+				console.log(data);
+				displayTrails(data);
+				})
+			}
+			else {
+				alert("we gots a problem")
+			}
+		})
+	.catch(err => {
+		console.error(err);
+		});
+	}
 });
 
