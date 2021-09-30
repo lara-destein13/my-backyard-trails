@@ -49,10 +49,6 @@ header h1 {
     padding-left: 10px;
 }
 
-section .resultsContainer, .mapContainer{
-    padding: 5px 10px;
-}
-
 .results {
     margin-top: 15px;
     text-align: center;
@@ -99,6 +95,7 @@ section .resultsContainer, .mapContainer{
 }
 
 .address-miles {
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
 }
