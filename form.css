@@ -41,15 +41,18 @@ header h1 {
 }
 
 .submitBtn {
-    margin-bottom: 5px;
+    margin: 5px;
     padding: 5px;
     font-size: 1em;
-    background-color: #9fa9a3;
+    background-color: #e3e0cc;
+    border-style: solid;
+    border-color: #9fa9a3;
+    border-radius: 20px;
 }
 
 .submitBtn:hover {
     font-style: italic;
-    color: white;
+    background-color: #9fa9a3;
 }
 
 .address h3, .miles h3 {
@@ -59,12 +62,15 @@ header h1 {
 .mapBtn {
     margin: 15px auto;
     padding: 5px;
-    background-color: #9fa9a3;
+    background-color: #e3e0cc;
+    border-style: solid;
+    border-color: #9fa9a3;
+    border-radius: 20px;
 }
 
 .mapBtn:hover {
     font-style: italic;
-    color: white;
+    background-color: #9fa9a3;
 }
 
 .row {
