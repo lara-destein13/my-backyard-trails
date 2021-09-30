@@ -40,6 +40,10 @@ header h1 {
     text-align: center;
 }
 
+.address h3, .miles h3 {
+    background-color: #9fa9a3;
+}
+
 .row {
     padding: 10px;
     font-size: 1.5em;
