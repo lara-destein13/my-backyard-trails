@@ -1,4 +1,4 @@
-#container {
+body{
     background-color: #e3e0cc;; 
     width: 50%;
     text-align: center;
@@ -23,18 +23,29 @@
     background-color: #9fa9a3;
     padding: 10px;
 }
-#age-input, #weight-input {
+#age-header, #height, #weight, #beginning-bpm, #ending-bpm, #address {
+    margin-top:10px;
+}
+#age-right, #weight-right {
+    justify-content: right;
+}
+input {
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: row;
     width: 25%;
     height: 30px;
-    background-color: lightgray;
+    background-color: white;
     border: black solid 3px;
     border-radius: 5px;
     text-align: center;
 }
+#age-right, #weight-right {
+    margin-left: 120px;
+}
 
-#age-header, #weight {
+#age-header, #weight, #beginning-bpm, #ending-bpm {
     font-size: 2em;
     text-align: center;
 }
@@ -60,114 +71,18 @@
     border-radius: 5px;
 }
 
-#submit-button {
+.submitBtn {
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
-    font-size: 50px;
-    width: 50%;
+    font-size: 30px;
+    width: 25%;
     background-color: grey;
     padding: 5px;
     border: solid black 5px;
     border-radius: 5px;
 }
 
-#submit-button:hover {
+.submitBtn:hover {
     background-color: lightgrey;
 }
-
-
-
-
-
-
-
-
-/* .row {
-    padding: 10px;
-    font-size: 3em;
-    font-weight: bold;
-} */
-
-/* #form {
-    width: 45%;  
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    text-align:center;
-    margin-top: -15px;
-    background-color: #e3e0cc;
-} */
-
-/* #page-2 {
-    text-align: center;
-} */
-
-/* #title {
-   background-color: #9fa9a3; 
-   font-size: 4em;
-   padding: 10px;
-   display: flex;
-   flex-direction: row;
-} */
-/* header {
-    font-size: 4em;
-}*/
-
-/* logo {
-    height: 100px;
-    width: 100px;
-} */
-
-/* h2 {
-    font-size: 3em;
-    font-weight: bold;
-} */
-
-/* h3 {
-    font-size: 2em;
-    font-weight: bold;
-} */
-
-/* input {
-    width: 50%;
-    height: 75px;
-    background-color: lightgrey;
-    border: black solid 3px;
-}*/
-
-/* .height {
-    width:40%;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly 
-}*/
-
-/* .feet, .inches {
-    display: flex;
-    flex-direction: column; 
-}*/
-
-/* select {
-    width: 20%;
-    height: 75px;
-    background-color: lightgrey;
-    border: black solid 3px;
-}*/
-
-/* #submit-button {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25px;
-    font-size: 50px;
-    width: 50%;
-    background-color: grey;
-    padding: 5px;
-    border: solid black 5px;
-    border-radius: 5px;
-}
-
-#submit-button:hover {
-    background-color: lightgrey;
-} */
