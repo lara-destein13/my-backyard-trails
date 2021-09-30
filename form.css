@@ -23,8 +23,7 @@ header h1 {
 }
 
 .form {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
     border-style: solid;
