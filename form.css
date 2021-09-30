@@ -59,6 +59,19 @@ header h1 {
     background-color: #9fa9a3;
 }
 
+/*.map {
+    background-image: url("./assets/Creative/hiking_website_pic.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}*/
+
 .mapBtn {
     margin: 15px auto;
     padding: 5px;
