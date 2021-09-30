@@ -67,11 +67,6 @@ header h1 {
     background-color: #9fa9a3;
 }
 
-.resultsContainer {
-    display: flex;
-    flex-direction: column;
-}
-
 .mapContainer {
     display: flex;
     flex-direction: column;
@@ -112,6 +107,7 @@ iframe {
 }
 
 footer {
+    margin-top: 15px;
     font-size: smaller;
     padding: 20px 35px;
     background-color: #9fa9a3;
