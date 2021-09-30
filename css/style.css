@@ -127,6 +127,7 @@ iframe {
 }
 
 footer {
+    font-size: smaller;
     padding: 20px 35px;
     background-color: #9fa9a3;
     width: 100%;
