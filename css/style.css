@@ -24,6 +24,7 @@ header {
     background-color: #9fa9a3;
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 /*
@@ -53,6 +54,7 @@ section .resultsContainer, .mapContainer{
 }
 
 .results {
+    margin-top: 15px;
     text-align: center;
 }
 
@@ -87,15 +89,16 @@ section .resultsContainer, .mapContainer{
 }
 
 .mapContainer {
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.address-miles-map {
     display: flex;
     flex-direction: column;
 }
 
 .address-miles {
-    margin: auto;
     display: flex;
     flex-direction: column;
 }
@@ -126,4 +129,5 @@ iframe {
 footer {
     padding: 20px 35px;
     background-color: #9fa9a3;
+    width: 100%;
 }
