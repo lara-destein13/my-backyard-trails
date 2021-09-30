@@ -47,6 +47,7 @@
 #height-feet-label {
     text-align: center;
     font-size: 24px;
+    margin-bottom: -10px;
 }
 
 #feet-selector, #inches-selector {
@@ -59,7 +60,21 @@
     border-radius: 5px;
 }
 
+#submit-button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    font-size: 50px;
+    width: 50%;
+    background-color: grey;
+    padding: 5px;
+    border: solid black 5px;
+    border-radius: 5px;
+}
 
+#submit-button:hover {
+    background-color: lightgrey;
+}
 
 
 
