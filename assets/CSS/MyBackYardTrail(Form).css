@@ -111,6 +111,10 @@ input {
     border-radius: 5px;
 }
 
+.address-miles {
+    margin-top: 60px;
+}
+
 #address, #miles-away {
     font-size: 2em;
 }
@@ -152,4 +156,26 @@ input {
 
 .submitBtn:hover {
     background-color: #9fa9a3;
+}
+
+#coords {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    font-size: 30px;
+    width: 260px;
+    background-color: lightgrey;
+    padding: 5px;
+    border: solid black 5px;
+    border-radius: 5px;
+}
+
+#coords:hover {
+    background-color: #9fa9a3;
+}
+
+#trails-container {
+    height: 500px;
+    width: 500px;
+    padding: 10px;
 }
