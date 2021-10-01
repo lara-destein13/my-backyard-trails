@@ -95,6 +95,14 @@ input {
     border-radius: 5px;
 }
 
+#address, #miles-away {
+    font-size: 2em;
+}
+
+#address-text {
+    margin-bottom: 10px;
+}
+
 /*#results p {
     margin: 15px auto;
     padding: 5px;
