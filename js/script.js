@@ -3,18 +3,30 @@ var displayTrails = function(trails) {
 	if (trails.length === 0) {
 		trailsContainerEl.textContent = "No Trails Close By";
 		return;
-	}
-
-	 console.log("trails", trails)
+	};
+	console.log("trails",trails)
 	for (var i=0; i < trails.length; i++) {
 		var trailname = trails[i].name;
-		var trailsEl = document.createElement('a');
-		trailsEl.setAttribute("href", trails[i].url)
-		trailsEl.textContent = trailname;
-		trailsContainerEl.appendChild(trailsEl);
+		var trailnameEl = document.createElement('p');
+		trailnameEl.textContent = trailname
+		trailsContainerEl.appendChild(trailnameEl);
+
+		var trailsiteEl = document.createElement('a');
+		trailsiteEl.setAttribute("href", trails[i].url);
+		trailsiteEl.textContent = "Visit Website";
+		trailsContainerEl.appendChild(trailsiteEl);
+
+		var mapEl = document.createElement("BUTTON");
+		mapEl.textContent = "View on Map";
+		mapEl.setAttribute("onclick", pinMap());
+		trailsContainerEl.appendChild(mapEl);
+
 	};
 };
-	
+function pinMap() {
+	console.log("works")
+	//code to place pin on map for selected trial will go here
+}
 // Use entered address to find trails
 function getAddress() {
 	var address = $('#address').val();
