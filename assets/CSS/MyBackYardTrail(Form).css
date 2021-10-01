@@ -128,18 +128,21 @@ input {
     margin-bottom: 25px;
     font-size: 30px;
     width: 260px;
-    background-color: lightgrey;
+    background-color: #9fa9a3;
     padding: 5px;
     border: solid black 5px;
     border-radius: 5px;
 }
 
 .submitBtn:hover {
-    background-color: #9fa9a3;
+    background-color: lightgrey;
 }
 
 div h2 {
-    margin: 25px auto;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
     padding: 15px;
     font-size: 2em;
     font-style: italic;
@@ -156,14 +159,18 @@ div h2 {
     margin-top: 25px;
     font-size: 30px;
     width: 260px;
-    background-color: lightgrey;
+    background-color: #9fa9a3;
     padding: 5px;
     border: solid black 5px;
     border-radius: 5px;
 }
 
 #coords:hover {
-    background-color: #9fa9a3;
+    background-image: url("../Creative/hiking_website_pic.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #e3e0cc;
+   text-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 #trails-container {
