@@ -1,4 +1,4 @@
-
+alert("hello");
 // Use entered address to find trails
 function getAddress() {
 	var address = $('#address').val();
@@ -58,3 +58,15 @@ function geolocationCallback( position ){
 }
 });
 
+// A simple utility function that finds a DOM element with id 'id', 
+// and assigns the click handler function 'func'.
+function setOnClick(id, func) {
+    var element = document.getElementById(id);
+    element.onclick = func;
+}
+
+function clickHandler(){
+	alert("click")
+}
+
+setOnClick("startBTN", clickHandler);
