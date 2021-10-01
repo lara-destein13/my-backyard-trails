@@ -82,3 +82,21 @@ $("#coords").click(function() {
 		});
 	}
 });
+
+// A simple utility function that finds a DOM element with id 'id', 
+// and assigns the click handler function 'func'.
+function setOnClick(id, func) {
+    var element = document.getElementById(id);
+    element.onclick = func;
+}
+
+function testButtonHandler() {
+	var address = $('#address-text').val();
+	var cityAndState = $('#address-text-2').val();
+	alert(address);
+	alert(cityAndState);
+	// var geocoder = new google.maps.Geocoder();
+	// geocoder.geocode({ address: address }, (results, status) => {
+}
+
+setOnClick("test-button", testButtonHandler);
