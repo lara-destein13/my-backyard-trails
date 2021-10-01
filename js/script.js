@@ -1,4 +1,4 @@
-alert("hello");
+
 // Use entered address to find trails
 function getAddress() {
 	var address = $('#address').val();
@@ -66,7 +66,7 @@ function setOnClick(id, func) {
 }
 
 function clickHandler(){
-	alert("click")
+	window.location.href = 'data.html';
 }
 
 setOnClick("startBTN", clickHandler);
