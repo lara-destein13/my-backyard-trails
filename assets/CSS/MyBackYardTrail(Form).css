@@ -69,7 +69,7 @@ input {
     margin-left: 120px;
 }
 
-#age-header, #weight, #beginning-bpm, #ending-bpm {
+#age-header, #weight, #beginning-bpm, #ending-bpm, #address {
     font-size: 2em;
     text-align: center;
 }
@@ -109,6 +109,14 @@ input {
     margin: 5px;
     border: black solid 2px;
     border-radius: 5px;
+}
+
+#address-text {
+    margin-bottom: 10px;
+}
+
+#address-text, #address-text-2 {
+    width: 250px;
 }
 
 /*#results p {
