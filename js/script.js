@@ -1,10 +1,15 @@
+var lat = 0
+var lng = 0
+var geocoder;
+var map;
 var trailsContainerEl = document.querySelector('#trails-container');
+
 var displayTrails = function(trails) {
 	if (trails.length === 0) {
 		trailsContainerEl.textContent = "No Trails Close By";
 		return;
 	};
-	console.log("trails",trails)
+	
 	for (var i=0; i < trails.length; i++) {
 		var trailname = trails[i].name;
 		var trailnameEl = document.createElement('p');
@@ -16,17 +21,18 @@ var displayTrails = function(trails) {
 		trailsiteEl.textContent = "Visit Website";
 		trailsContainerEl.appendChild(trailsiteEl);
 
-		var mapEl = document.createElement("BUTTON");
+		var mapEl = document.createElement("button");
 		mapEl.textContent = "View on Map";
-		mapEl.setAttribute("onclick", pinMap());
+		mapEl.setAttribute("id", trails[i].lat+','+trails[i].lon);
+		mapEl.onclick = function() { pinMap() };
 		trailsContainerEl.appendChild(mapEl);
-
+		
 	};
 };
+
 function pinMap() {
-	console.log("works")
-	//code to place pin on map for selected trial will go here
-}
+console.log("yay");
+};
 // Use entered address to find trails
 function getAddress() {
 	var address = $('#address').val();
