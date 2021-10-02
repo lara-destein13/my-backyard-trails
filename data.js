@@ -90,13 +90,24 @@ function setOnClick(id, func) {
     element.onclick = func;
 }
 
-function testButtonHandler() {
-	var address = $('#address-text').val();
+async function testButtonHandler() {
+	var streetAddress = $('#address-text').val();
 	var cityAndState = $('#address-text-2').val();
+	var address = `${streetAddress} ${cityAndState}`
 	alert(address);
-	alert(cityAndState);
-	// var geocoder = new google.maps.Geocoder();
-	// geocoder.geocode({ address: address }, (results, status) => {
+	
+	var geocoder = new google.maps.Geocoder();
+	var geocoderFunction = geocoder.geocode
+	var request = {
+		address: address
+	}
+	
+
+	var response = await geocoderFunction(request);
+	// var results = response.results
+	// var results = results
+	var stringified = JSON.stringify(response, null, 4);
+	console.log(stringified);
 }
 
 setOnClick("test-button", testButtonHandler);
