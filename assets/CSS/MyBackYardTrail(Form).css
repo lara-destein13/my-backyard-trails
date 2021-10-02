@@ -182,6 +182,9 @@ div h2 {
 }
 
 #trails-container {
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
     height: 500px;
     width: 500px;
     padding: 10px;
