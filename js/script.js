@@ -1,8 +1,10 @@
 var lat = 0
 var lng = 0
 var geocoder;
-var map;
+let map;
+
 var trailsContainerEl = document.querySelector('#trails-container');
+
 
 var displayTrails = function(trails) {
 	if (trails.length === 0) {
@@ -24,15 +26,53 @@ var displayTrails = function(trails) {
 		var mapEl = document.createElement("button");
 		mapEl.textContent = "View on Map";
 		mapEl.setAttribute("id", trails[i].lat+','+trails[i].lon);
-		mapEl.onclick = function() { pinMap() };
+		mapEl.setAttribute("class","map-button")
 		trailsContainerEl.appendChild(mapEl);
+		//mapEl.data("coordinates") = trails[i].lat+','+trails[i].lon;
 		
 	};
+
+	var buttons = document.querySelectorAll('button');
+	for (var i=0; i<buttons.length; ++i) {
+  		buttons[i].addEventListener('click', clickFunc);
+	}
+	function clickFunc() {
+  		coordinates = this.id;
+		const latlngstr = coordinates.split(',', 2);
+		const latlng = {
+			lat: parseFloat(latlngstr[0]),
+			lng: parseFloat(latlngstr[1]),
+		};
+		console.log(latlng);
+		const map = new google.maps.Map(document.getElementById("map"), {
+			zoom: 8,
+			center: latlng,
+			
+
+		  });
+		var geocoder = new google.maps.Geocoder();
+		const infowindow = new google.maps.InfoWindow();
+		geocoder.geocode({ location: latlng })
+    	.then((response) => {
+      	if (response.results[0]) {
+        const marker = new google.maps.Marker({
+          position: latlng,
+          map: map,
+		  zoom: 19
+        });
+
+        infowindow.setContent(response.results[0].formatted_address);
+        infowindow.open(map, marker);
+      } else {
+        window.alert("No results found");
+      }
+    })
+    .catch((e) => window.alert("Geocoder failed due to: " + e));
+		
+}
 };
 
-function pinMap() {
-console.log("yay");
-};
+
 // Use entered address to find trails
 function getAddress() {
 	var address = $('#address').val();
