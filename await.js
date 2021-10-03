@@ -90,8 +90,17 @@ function setOnClick(id, func) {
     element.onclick = func;
 }
 
-var resultTemplate = `
-<div>helloLara</div>
+var template = `
+<div>
+	<table>
+		<tbody>
+			<tr>
+				<td>Name</td>
+				<td>NAME</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
 `;
 
 async function submitButtonHandler() {
@@ -127,10 +136,14 @@ async function submitButtonHandler() {
 
 	response = await response.json();
 	var trails = response.data;
+	var html = '';
 	for (var i = 0; i < trails.length; i++) {
 		var trail = trails[i];
-		console.log(trail.name);
+		var div = template;
+		div = div.replace('NAME', trail.name)
+		html = html + div;
 	}
+	alert(html);
 	// console.log(JSON.stringify(response, null, 4));
 }
 
