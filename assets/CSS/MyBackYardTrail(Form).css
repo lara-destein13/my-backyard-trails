@@ -1,6 +1,16 @@
 body{
     background-color: #e3e0cc;
     text-align: center;
+    background-image: url("../Creative/hiking_website_pic.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
 }
 /* .mbt-row {
     margin-left: auto;
@@ -133,7 +143,7 @@ input {
     border-width: 3px;
     border-color: black;
     box-shadow: 0 0 10px rgba(159,169,163,1);
-}*/
+}
 
 .submitBtn {
     margin-left: auto;
@@ -150,7 +160,7 @@ input {
 
 .submitBtn:hover {
     background-color: lightgrey;
-}
+}*/
 
 div h2 {
     margin-top: 25px;
@@ -162,7 +172,7 @@ div h2 {
     font-style: italic;
     width: 230px;
     border-bottom: 1px solid #9fa9a3;
-    background-color: #e3e0cc;
+    /*background-color: #e3e0cc;*/
     display: flex;
     flex-direction: column;
 }
@@ -180,11 +190,12 @@ div h2 {
 }
 
 #coords:hover {
-    background-image: url("../Creative/hiking_website_pic.jpg");
+    background-color: #e3e0cc;
+    /*background-image: url("../Creative/hiking_website_pic.jpg");
     background-size: cover;
     background-position: center;
     color: #e3e0cc;
-   text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+   text-shadow: 0 0 10px rgba(0, 0, 0, 1);*/
 }
 
 #trails-container {
