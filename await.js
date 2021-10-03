@@ -102,16 +102,16 @@ var template = `
 	<table class="trail-table">
 		<tbody>
 			<tr class="trail-row">
-				<td class="trail-data"> Name</td>
-				<td class="trail-data">NAME</td>
+				<td class="trail-data-left"> Name</td>
+				<td class="trail-data-right">NAME</td>
 			</tr>
 			<tr class="trail-row">
-				<td class="trail-data">City</td>
-				<td class="trail-data">CITY</td>
+				<td class="trail-data-left">City</td>
+				<td class="trail-data-right">CITY</td>
 			</tr>
 			<tr class="trail-row">
-				<td class="trail-data">Region</td>
-				<td class="trail-data">REGION</td>
+				<td class="trail-data-left">Region</td>
+				<td class="trail-data-right">REGION</td>
 			</tr>	
 		</tbody>
 	</table>
@@ -137,7 +137,7 @@ async function submitButtonHandler() {
 	var location = geometry.location;
 	var lat = location.lat();
 	var lng = location.lng();
-	alert(`lat: ${lat}, lng: ${lng}`)
+	// alert(`lat: ${lat}, lng: ${lng}`)
 
 	
 	var trailapi = "https://trailapi-trailapi.p.rapidapi.com/trails/explore/?lat=" + lat + "&lon=" + lng;
@@ -160,8 +160,7 @@ async function submitButtonHandler() {
 		div = div.replace('REGION', trail.region.trim());
 		html = html + div;
 	}
-	alert(html);
-	// <div id="trails-container"></div>
+	// alert(html);
 
 	setInnerHTML("trails-container", html);
 

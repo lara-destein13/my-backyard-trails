@@ -134,13 +134,27 @@ input {
 }
 
 #trails-container {
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
 }
 
 .trail-div {
     margin-top: 20px;
 }
 
-.trail-data {
+.trail-data-left {
     text-align: left;
+    width: 150px;
+}
+
+.trail-data-right {
+    text-align: left;
+}
+
+.trail-table {
+    background-color: white;
+    border: solid black 2px;
+    border-radius: 5px;
+    width: 100%;
 }
