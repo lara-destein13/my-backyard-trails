@@ -111,8 +111,18 @@ async function submitButtonHandler() {
 	var lng = location.lng();
 	alert(`lat: ${lat}, lng: ${lng}`)
 
-	var stringified = JSON.stringify(location, null, 4);
-	console.log(stringified);
+	
+	var trailapi = "https://trailapi-trailapi.p.rapidapi.com/trails/explore/?lat=" + lat + "&lon=" + lng;
+	var response = await fetch(trailapi, {
+		"method": "GET",
+		"headers": {
+			"x-rapidapi-host": "trailapi-trailapi.p.rapidapi.com",
+			"x-rapidapi-key": "2d78d93295msh3f3b2883bfcb2f3p1482cejsna6723b0a74ea"
+		}
+	})
+
+	response = await response.json();
+	console.log(JSON.stringify(response, null, 4));
 }
 
 setOnClick("submitBtn", submitButtonHandler);
