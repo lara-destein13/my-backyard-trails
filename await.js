@@ -90,6 +90,10 @@ function setOnClick(id, func) {
     element.onclick = func;
 }
 
+var resultTemplate = `
+<div>helloLara</div>
+`;
+
 async function submitButtonHandler() {
 	var streetAddress = $('#address-text').val();
 	var cityAndState = $('#address-text-2').val();
@@ -122,7 +126,12 @@ async function submitButtonHandler() {
 	})
 
 	response = await response.json();
-	console.log(JSON.stringify(response, null, 4));
+	var trails = response.data;
+	for (var i = 0; i < trails.length; i++) {
+		var trail = trails[i];
+		console.log(trail.name);
+	}
+	// console.log(JSON.stringify(response, null, 4));
 }
 
 setOnClick("submitBtn", submitButtonHandler);
