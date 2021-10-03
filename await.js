@@ -105,6 +105,14 @@ var template = `
 				<td>Name</td>
 				<td>NAME</td>
 			</tr>
+			<tr>
+				<td>City</td>
+				<td>CITY</td>
+			</tr>
+			<tr>
+				<td>Region</td>
+				<td>REGION</td>
+			</tr>	
 		</tbody>
 	</table>
 </div>
@@ -142,12 +150,14 @@ async function submitButtonHandler() {
 	})
 
 	response = await response.json();
-	var trails = response.data;
+	var data = response.data;
 	var html = '';
-	for (var i = 0; i < trails.length; i++) {
-		var trail = trails[i];
+	for (var i = 0; i < data.length; i++) {
+		var trail = data[i];
 		var div = template;
-		div = div.replace('NAME', trail.name)
+		div = div.replace('NAME', trail.name.trim());
+		div = div.replace('CITY', trail.city.trim());
+		div = div.replace('REGION', trail.region.trim());
 		html = html + div;
 	}
 	alert(html);
@@ -156,7 +166,7 @@ async function submitButtonHandler() {
 	setInnerHTML("trails-container", html);
 
 
-	// console.log(JSON.stringify(response, null, 4));
+	 console.log(JSON.stringify(response, null, 4));
 }
 
 setOnClick("submitBtn", submitButtonHandler);

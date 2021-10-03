@@ -2,25 +2,14 @@ body{
     background-color: #e3e0cc;
     text-align: center;
 }
-/* .mbt-row {
-    margin-left: auto;
-    margin-right: auto;
-} */
+
 .flex-column {
     display: flex;
     flex-direction: column;
 }
-/* .d-flex {
-    margin-left: auto;
-    margin-right: auto;  
-} */
+
 
 #header {
-    /*margin-top: -15px;
-    font-size: 4em;
-    justify-content: end;
-    background-color: #9fa9a3;
-    padding: 10px;*/
     margin-left: auto;
     margin-right: auto;
     margin-top: -10px;
@@ -128,16 +117,6 @@ input {
     width: 250px;
 }
 
-/*#results p {
-    margin: 15px auto;
-    padding: 5px;
-    width: 250px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: black;
-    box-shadow: 0 0 10px rgba(159,169,163,1);
-}*/
-
 .submitBtn {
     margin-left: auto;
     margin-right: auto;
@@ -153,3 +132,8 @@ input {
 .submitBtn:hover {
     background-color: #9fa9a3;
 }
+
+#trails-container {
+    margin-left: 50px;
+}
+
