@@ -44,25 +44,13 @@ body{
     justify-content: left;
 }
 
-#age-header, #height, #weight, #beginning-bpm, #ending-bpm {
+/*form input*/
+/*#age-header, #height, #weight, #beginning-bpm, #ending-bpm {
     margin-top: 10px;
 }
 
 #age-right, #weight-right {
     justify-content: right;
-}
-
-input {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: row;
-    width: 25%;
-    height: 30px;
-    background-color: white;
-    border: black solid 3px;
-    border-radius: 5px;
-    text-align: center;
 }
 
 #age-right, #weight-right {
@@ -109,6 +97,24 @@ input {
     margin: 5px;
     border: black solid 2px;
     border-radius: 5px;
+}*/
+
+input {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    height: 30px;
+    background-color: white;
+    border: black solid 3px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#address {
+    font-size: 2em;
+    text-align: center;
 }
 
 #address-text {
