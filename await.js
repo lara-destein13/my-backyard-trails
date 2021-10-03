@@ -111,7 +111,11 @@ var template = `
 			</tr>
 			<tr class="trail-row">
 				<td class="trail-data-left">Region</td>
-				<td class="trail-data-right">REGION</td>
+				<td class="trail-data-right">REGION</td>	
+			</tr>	
+			<tr class="trail-row">
+				<td class="trail-data-left">url</td>
+				<td class="trail-data-right"><a href="URL">Click Here</a></td>
 			</tr>	
 		</tbody>
 	</table>
@@ -155,9 +159,10 @@ async function submitButtonHandler() {
 	for (var i = 0; i < data.length; i++) {
 		var trail = data[i];
 		var div = template;
-		div = div.replace('NAME', trail.name.trim());
-		div = div.replace('CITY', trail.city.trim());
-		div = div.replace('REGION', trail.region.trim());
+		div = div.replace('NAME', trail.name);
+		div = div.replace('CITY', trail.city);
+		div = div.replace('REGION', trail.region);
+		div = div.replace('URL', trail.url);
 		html = html + div;
 	}
 	// alert(html);
