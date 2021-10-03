@@ -98,20 +98,20 @@ function setInnerHTML(id, value) {
 }
 
 var template = `
-<div>
-	<table>
+<div class="trail-div">
+	<table class="trail-table">
 		<tbody>
-			<tr>
-				<td>Name</td>
-				<td>NAME</td>
+			<tr class="trail-row">
+				<td class="trail-data"> Name</td>
+				<td class="trail-data">NAME</td>
 			</tr>
-			<tr>
-				<td>City</td>
-				<td>CITY</td>
+			<tr class="trail-row">
+				<td class="trail-data">City</td>
+				<td class="trail-data">CITY</td>
 			</tr>
-			<tr>
-				<td>Region</td>
-				<td>REGION</td>
+			<tr class="trail-row">
+				<td class="trail-data">Region</td>
+				<td class="trail-data">REGION</td>
 			</tr>	
 		</tbody>
 	</table>
