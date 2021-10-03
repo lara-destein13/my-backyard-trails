@@ -57,7 +57,7 @@ body{
     margin-left: 120px;
 }
 
-#age-header, #weight, #beginning-bpm, #ending-bpm, #address {
+#age-header, #weight, #beginning-bpm, #ending-bpm {
     font-size: 2em;
     text-align: center;
 }
