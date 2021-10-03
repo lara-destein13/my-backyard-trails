@@ -90,6 +90,13 @@ function setOnClick(id, func) {
     element.onclick = func;
 }
 
+// A simple utility function that finds a DOM element with id 'id', 
+// and sets its innerHTML to the value in 'value';
+function setInnerHTML(id, value) {
+    var element = document.getElementById(id);
+    element.innerHTML = value;
+}
+
 var template = `
 <div>
 	<table>
@@ -144,6 +151,11 @@ async function submitButtonHandler() {
 		html = html + div;
 	}
 	alert(html);
+	// <div id="trails-container"></div>
+
+	setInnerHTML("trails-container", html);
+
+
 	// console.log(JSON.stringify(response, null, 4));
 }
 
