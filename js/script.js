@@ -219,11 +219,50 @@ async function submitButtonHandler() {
 	displayTrails(data);
 }
 
-// A simple utility function that finds a DOM element with id 'id', 
-// and assigns the click handler function 'func'.
-function setOnClick(id, func) {
-    var element = document.getElementById(id);
-    element.onclick = func;
+
+
+
+
+
+
+
+
+function heartButtonClicked() {
+	window.location.href = "module.html";
 }
 
-setOnClick("searchBtn", submitButtonHandler);
+var element = document.getElementById("heartBTN");
+if (element) {
+	element.onclick = heartButtonClicked;
+}
+
+var element = document.getElementById("searchBtn");
+if (element) {
+	element.onclick = submitButtonHandler;
+}
+
+
+
+// element = document.getElementById("heartBTN");
+// if (element) {
+// 	element.onclick = heartButtonClicked;
+// }
+
+
+
+
+
+
+
+
+
+
+
+// // A simple utility function that finds a DOM element with id 'id', 
+// // and assigns the click handler function 'func'.
+// function setOnClick(id, func) {
+//     var element = document.getElementById(id);
+//     element.onclick = func;
+// }
+
+// setOnClick("searchBtn", submitButtonHandler);
