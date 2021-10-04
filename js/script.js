@@ -203,7 +203,6 @@ async function submitButtonHandler() {
 	var location = geometry.location;
 	var lat = location.lat();
 	var lng = location.lng();
-	alert(`lat: ${lat}, lng: ${lng}`)
 
 	
 	var trailapi = "https://trailapi-trailapi.p.rapidapi.com/trails/explore/?lat=" + lat + "&lon=" + lng;
