@@ -1,0 +1,43 @@
+#all-rows {
+    background-color: lightgray;
+}
+
+#container {
+    width: 400px;
+}
+
+.mbt-row {
+    padding: 10px;
+}
+
+#height {
+    background-color: lightgreen;
+}
+
+#height-feet {
+    border: 2px solid red;
+}
+
+#height-inches {
+    border: 2px solid blue;
+}
+
+#spacer {
+    width: 10%;
+}
+
+#age-input {
+    background-color: lightblue;
+}
+
+#age-spacer {
+    width: 10%;
+}
+
+#weight-input {
+    background-color: lightpink;
+}
+
+#weight-spacer {
+    width: 10%;
+}
