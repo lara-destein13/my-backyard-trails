@@ -217,22 +217,7 @@ async function submitButtonHandler() {
 
 	response = await response.json();
 	var data = response.data;
-	var html = '';
-	for (var i = 0; i < data.length; i++) {
-		var trail = data[i];
-		var div = template;
-		div = div.replace('NAME', trail.name);
-		div = div.replace('CITY', trail.city);
-		div = div.replace('REGION', trail.region);
-		div = div.replace('URL', trail.url);
-		html = html + div;
-	}
-	// alert(html);
-
-	setInnerHTML("trails-container", html);
-
-
-	 console.log(JSON.stringify(response, null, 4));
+	displayTrails(data);
 }
 
 // A simple utility function that finds a DOM element with id 'id', 
