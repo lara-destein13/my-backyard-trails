@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="MyBackyardTrail(LandingPage).css">
-        <title>Heart Rate Max Estimator</title>
-    </head>
 
-        <body>
-                
+<html>
+    <header>
+        <link rel="stylesheet" type="text/css" src="my-backyard-trails-button-handler\data.css">
+        <title>Heart Rate Max Estimator</title>   
+    </header>
+        <body> 
+        <div>              
             <form name="mhr" id="mhr">
                     <script language="JavaScript" src="js\_script.js"></script>
                         <h1> Heart Rate Max Estimator </h1>
                         <h2 align="center"> Your age can be used to estimate your (HR<sub>max</sub>) </h2>
-                            <div text-align="center">   
-                                <ul> Begin at the left of the form
-                                    <li>Enter Age</li>
-                                    <li>Select Activity</li>
-                                    <li>Select your fitness level experience</li> 
+                            <div align="center">   
+                                <ul> Begin at the left of the form: <br/>
+                                    Type in your <b>age</b> <br/>
+                                    Select the <b>activity</b> involved <br/>
+                                    Select your fitness <b>level/experience</b> <br/>
                                     <br/>
-                                    <b>Get your results. Click the &quot;Calculate&quot; button.</b></p>
+                                    Get your results. <br/> Click the <b>&quot;Calculate&quot; </b> button.
                                 </ul>
                             </div>
-
                 <table border="1" align="center" >
                     <tr>
                         <td><table cellpadding="4" bgcolor="green" >
@@ -99,8 +98,47 @@
                     </tr>
                 </table>
             </form>
+        </div>
+        <br/>
+            <div align="center">
+                <h2> Easily estimate your fitness level using the tool below </h2>
+                    <h3><i>Consider your fitness level when deciding upon a trail in your area</i></h3>
+                        <form name="hrmax" id="hrmax">
+                            <section> Assess your cardiovascular fitness. <br/> Estimate your Vo<sub>2</sub> max. <br/> <br/> All you need is your: <br/> 1. HR<sub>max</sub> <br/>2. HR<sub>rest</sub>. 
+                                <Ol> Do the following:
+                                    <li> Measure your HR when you wake up before getting out of bed</li>
+                                    <li> Measure your peak HR while exercising at or near your limit HR<sub>max</sub></li>
+                                </Ol>
+                            </section>
+                            <p>
+                                Have your measurements? <br> You are ready to learn your cardio fitness estimate! </br> Enter your measurments <br/> Press the Calculate button below <br/>
+                            </p>
+            </div>
+            <div>
+                            <table border="1" align="center">
+                            <tbody><tr>
+                                <td><table cellpadding="4" bgcolor="green"
+                                    <tbody><tr>
+                                    <td>HR<sub>max </sub>
+                                        <input name="hrm" type="text" size="4" onfocus="vclear()">
+                                        bpm</td>
+                                    <td>HR<sub>rest </sub>
+                                        <input name="hrr" type="text" size="4" onfocus="vclear()">
+                                        bpm</td>
+                                    <td><input type="button" name="Button2" value="Calculate" onclick="calcv()" </td>
+                                    <td>VO<sub>2 </sub>max </td>
+                                    <td><input name="vo2" type="text" size="4" </td>
+                                    </tr>
+                                </tbody></table></td>
+                            </tr>
+                        </tbody></table>
+                        </form>
+            </div>
         </body>
-        <footer> 
-            <a href src="index.html">Homepage</a> 
+        <br/>
+        <footer align="center"> 
+            <p>Site Map</p>
+            <a href src="index.html">Landing Page</a>
+            <a href src="index.html">Trail Search</a>
         </footer>
   </html>
