@@ -1,0 +1,77 @@
+/* 9fa9a3 */
+/* e3e0cc */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #e3e0cc;
+}
+.header {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: row;
+    background-color: #9fa9a3;
+    padding: 10px;
+    width: 750px;
+}
+.logo {
+    height: 100px;
+    width: 100px;
+    justify-content: left; 
+}
+h1 {
+    font-size: 64px;
+    color: black;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+h2 {
+    font-size: 36px;
+    text-align: center;
+    color: black;
+    background-color: #9fa9a3;
+    padding: 10px;
+    width: 30%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+p {
+    font-size: 30px;
+    color: black;
+    width: 35%;
+    margin-top: -15px;
+    margin-left: auto;
+    margin-right: auto;  
+}
+.startAdventure {
+    background-image: url("https://ewscripps.brightspotcdn.com/dims4/default/28bb7ae/2147483647/strip/true/crop/640x360+0+60/resize/1280x720!/quality/90/?url=https%3A%2F%2Fmediaassets.abc2news.com%2Fphoto%2F2016%2F07%2F28%2FCromwell1_1469742574417_43297141_ver1.0_640_480.jpg");
+    background-color: #cccccc;
+    background-size: cover;
+    margin-top: -5px;
+    height: 500px;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.startBTN {
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 30%;
+    height: 120px;
+    font-size: 40px;
+    color: black;
+    background-color: darkgrey;
+    position: absolute;
+    left: 675px;
+    top: 650px;
+    border: black solid 5px;
+    border-radius: 20px;
+}
+.startBTN:hover {
+    background-color: lightgrey;
+    color: black;
+}
