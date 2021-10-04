@@ -12,6 +12,11 @@ function setInnerHTML(id, value) {
     element.innerHTML = value;
 }
 
+function clickHandler(){
+	window.location.href = 'data.html';
+}
+setOnClick("startBTN", clickHandler);
+
 var template = `
 <div class="trail-div">
 	<table class="trail-table">
