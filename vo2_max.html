@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <script src="js\_script.js"></script>
+    <link rel="MyBackyardTrail(LandingPage).css" type="text">
+</head>
+    <body>
+        <div align="center">
+        <h1> Easily estimate your fitness level using the tool below </h1>
+            <h2><i>Consider your fitness level when deciding upon a trail in your area</i></h2>
+                <form name="hrmax" id="hrmax" >
+                    <section> Assess your cardiovascular fitness by estimating your Vo<sub>2</sub> max, using just your HR<sub>max</sub> and HR<sub>rest</sub>. 
+                        <Ul > Measure your lowest and highest hear rate by doing these two things
+                            <li> Take your HR first thing in the morning and write it down </li>
+                            <li> Exercise to your limit then measure your hear rate and write it down <span font-size="smaller"> HR<sub>max</sub></span></li>
+                        </Ul>
+                    </section>
+                    <p>
+                        When you have your measurements and are ready to learn your estimate, press the Calculate button below.
+                    </p>
+         </div>
+                    <table border="1" align="center">
+                    <tbody><tr>
+                        <td><table cellpadding="4" bgcolor="green"
+                            <tbody><tr>
+                            <td>HR<sub>max </sub>
+                                <input name="hrm" type="text" size="4" onfocus="vclear()">
+                                bpm</td>
+                            <td>HR<sub>rest </sub>
+                                <input name="hrr" type="text" size="4" onfocus="vclear()">
+                                bpm</td>
+                            <td><input type="button" name="Button2" value="Calculate" onclick="calcv()" </td>
+                            <td>VO<sub>2 </sub>max </td>
+                            <td><input name="vo2" type="text" size="4" </td>
+                            </tr>
+                        </tbody></table></td>
+                    </tr>
+                </tbody></table>
+                </form>
+
+        </body>
+
+  </html>
