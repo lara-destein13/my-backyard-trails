@@ -168,7 +168,8 @@ div h2 {
 #coords {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25px;
+    margin-top: 10px;
+    margin-bottom: 25px;
     font-size: 30px;
     width: 260px;
     background-color: #9fa9a3;
@@ -179,6 +180,26 @@ div h2 {
 
 #coords:hover {
     /*background-color: #e3e0cc;*/
+    background-image: url("../Creative/hiking_website_pic.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #e3e0cc;
+   text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.searchBtn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    font-size: 30px;
+    width: 260px;
+    background-color: #9fa9a3;
+    padding: 5px;
+    border: solid black 5px;
+    border-radius: 5px;
+}
+
+.searchBtn:hover {
     background-image: url("../Creative/hiking_website_pic.jpg");
     background-size: cover;
     background-position: center;
