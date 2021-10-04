@@ -5,8 +5,53 @@ let map;
 
 var trailsContainerEl = document.querySelector('#trails-container');
 
+var template = `
+<div class="trail-div">
+	<table class="trail-table">
+		<tbody>
+			<tr class="trail-row">
+				<td class="trail-data-left"> Name</td>
+				<td class="trail-data-right">NAME</td>
+			</tr>
+			<tr class="trail-row">
+				<td class="trail-data-left">City</td>
+				<td class="trail-data-right">CITY</td>
+			</tr>
+			<tr class="trail-row">
+				<td class="trail-data-left">Region</td>
+				<td class="trail-data-right">REGION</td>	
+			</tr>	
+			<tr class="trail-row">
+				<td class="trail-data-left">url</td>
+				<td class="trail-data-right"><a href="URL" target="_blank">Click Here</a></td>
+			</tr>
+                        <tr class="trail-row">
+				<td class="trail-data-left">map</td>
+				<td class="trail-data-right"><a href="https://www.google.com/maps/search/?api=1&query=LAT%2CLON" target="_blank">map</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+`;
 
-var displayTrails = function(trails) {
+function displayTrails(trails) {
+  var html = '';
+  for (var i = 0; i < trails.length; i += 1) {
+    var trail = trails[i];
+    var div = template;
+    div = div.replace('NAME', trail.name);
+    div = div.replace('CITY', trail.city);
+    div = div.replace('REGION', trail.region);
+    div = div.replace('URL', trail.url);
+    div = div.replace('LAT', trail.lat);
+    div = div.replace('LON', trail.lon);
+    html += div;
+    var element = document.getElementById('trails-container');
+    element.innerHTML = html;
+  }
+}
+
+var oldDisplayTrails = function(trails) {
 	if (trails.length === 0) {
 		trailsContainerEl.textContent = "No Trails Close By";
 		return;
