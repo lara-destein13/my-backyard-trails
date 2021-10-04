@@ -28,8 +28,6 @@ var displayTrails = function(trails) {
 		mapEl.setAttribute("id", trails[i].lat+','+trails[i].lon);
 		mapEl.setAttribute("class","map-button")
 		trailsContainerEl.appendChild(mapEl);
-		//mapEl.data("coordinates") = trails[i].lat+','+trails[i].lon;
-		
 	};
 
 	var buttons = document.querySelectorAll('button');
@@ -45,7 +43,7 @@ var displayTrails = function(trails) {
 		};
 		console.log(latlng);
 		const map = new google.maps.Map(document.getElementById("map"), {
-			zoom: 8,
+			zoom: 12,
 			center: latlng,
 			
 
@@ -58,7 +56,7 @@ var displayTrails = function(trails) {
         const marker = new google.maps.Marker({
           position: latlng,
           map: map,
-		  zoom: 19
+		  zoom: 12,
         });
 
         infowindow.setContent(response.results[0].formatted_address);
