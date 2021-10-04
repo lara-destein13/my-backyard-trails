@@ -75,7 +75,7 @@ p {
     border-radius: 20px;
 } */
 
-.startBTN {
+#startBTN {
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
@@ -87,7 +87,7 @@ p {
     border: black solid 5px;
     border-radius: 20px;
 }
-.startBTN:hover {
+#startBTN:hover {
     background-color: lightgrey;
     color: black;
 }
