@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="./assets/CSS/MyBackYardTrail(Form).css">
+  <link rel="stylesheet" href="./assets/CSS/data.css">
 
   <title>My Backyard Trails</title>
 
@@ -66,7 +66,6 @@
               </div>   
           </div>
         </div>
-
         <div id="weight" class="mbt-row">Weight</div>
         <div id="weight-input" class="mbt-row d-flex flex-row">
           <div id="weight-left" class="d-flex flex-column">
@@ -81,7 +80,6 @@
           <label for="beginningBPM"></label>
           <input type="text" id="beginning-BPM" placeholder="Enter BPM Here" />
         </div>
-
         <div id="ending-bpm" class="mbt-row">Ending BPM</div>
         <div id="ending-bpm-input" class="mbt-row">
           <label for="endingBPM"></label>
@@ -111,13 +109,13 @@
          </div>
 
       <button id="coords">Search Near Me</button>
-      <div id="trails-container"></div>
+      
 
     </div>
-
+    <div id="trails-container">map</div>
   <!-- Work on APIs -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmBeLOL6SYCO7pDA8wYc21Z_NBsk-QLWE"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmBeLOL6SYCO7pDA8wYc21Z_NBsk-QLWE&callback=diplayTrails" async></script>
   <script src="./js/script.js"></script>
 
   <!-- JQuery -->
