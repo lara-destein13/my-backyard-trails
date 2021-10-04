@@ -3,35 +3,53 @@
 <html lang="en">
 
 <head>
-
+  <link rel="stylesheet" href="./assets/CSS/MyBackyardTrail(LandingPage).css"/>
   <title>My Backyard Trails</title>
 
 </head>
 
 <body>
-  <h1>My Backyard Trails</h1>
+  <div class="header">
+    <div id="logo">
+      <img class="logo" src="assets/Creative/Mr-Fit-Logo.png"/>
+    </div>
+    <div id="title">
+      <h1>My Backyard Trails</h1>
+    </div>
+  </div>  
   <h2>Want to get connected to hiking trails in your area?</h2>
   <p>We're here to help you find the perfect trail that is both close to home and is the level of difficulty you seek. 
     Not sure of your experience level? Enter in some basic information about your fitness level and we'll recommend a trail for you.
   </p>
-  <button>Click here to start your adventure</button>
-  <div>
-    <button id='coords'>Search Near Me</button>
-    <input class="form-input" type="text" placeholder="Enter Your Address Here" name="address" id="address"/>
-    <button type="submit" onclick="getAddress()">Find your Trail</button>
+
+  <div class="startAdventure">
+    <button id="startBTN">Click here to start your adventure</button> 
   </div>
-  <h1>
-    Trails in your area
-  </h1>
-  <div id="trails-container">
-  </div>
-  <div id="map" style= "height:400px" style= "width: 100%;" ></div>
-  <p id="demo"></p>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmBeLOL6SYCO7pDA8wYc21Z_NBsk-QLWE&callback=diplayTrails" async></script>
-  <script src="./js/script.js"></script>
+
   
+    <img style="height: 200px; width: 350px; margin-left: auto; margin-right: auto; margin-top: 25px"src="https://ewscripps.brightspotcdn.com/dims4/default/28bb7ae/2147483647/strip/true/crop/640x360+0+60/resize/1280x720!/quality/90/?url=https%3A%2F%2Fmediaassets.abc2news.com%2Fphoto%2F2016%2F07%2F28%2FCromwell1_1469742574417_43297141_ver1.0_640_480.jpg"/>
+  
+  
+  <!-- JQuery -->
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous">
+  </script>
+
+  <!-- JQuery UI -->
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous">
+  </script>
+
+
+  <script src="./js/script.js"></script>
+  <script src="./js/await.js"></script>
 </body>
+
+</html>
 
 
  
