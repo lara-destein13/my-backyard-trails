@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="MyBackyardTrail(LandingPage).css">
+        <title>Heart Rate Max Estimator</title>
+    </head>
+
+        <body>
+                
+            <form name="mhr" id="mhr">
+                    <script language="JavaScript" src="js\_script.js"></script>
+                        <h1> Hear Rate Max Estimator </h1>
+                        <h2 align="center"> Your age can be used to estimate your (HR<sub>max</sub>) </h2>
+                            <div text-align="center">   
+                                <ul> Begin at the left of the form
+                                    <li>Enter Age</li>
+                                    <li>Select Activity</li>
+                                    <li>Select your fitness level experience</li> 
+                                    <br/>
+                                    <b>Get your results. Click the &quot;Calculate&quot; button.</b></p>
+                                </ul>
+                            </div>
+
+                <table border="1" align="center" >
+                    <tr>
+                        <td><table cellpadding="4" bgcolor="green" >
+                            <tr>
+                                <td align="center">Age
+                                    <input type="text" name="age" size="3" onfocus="vclear()" />
+                                </td>
+                                <td align="center">Sport
+                                    <select name="sport" size="1" onfocus="vclear()">
+                                    <option value="1">Running</option>
+                                    <option value="4">Cycling</option>
+                                    <option value="3">Rowing</option>
+                                    </select>
+                                </td>
+                                <td>Experience
+                                    <select name="exper" size="1" onfocus="vclear()">
+                                    <option value="2">Average</option>
+                                    <option value="1">Elite</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" colspan="3"><input type="button" name="Button12" value="Calculate" onclick="vcalc()" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Combined Londeree, Moeschberger and Miller </td>
+                            <td>HR<sub>max</sub>=
+                                <input type="text" name="bpm" size="4" />
+                                bpm
+                            </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Londeree and
+                                Moeschberger (1982)</td>
+                                <td>HR<sub>max</sub>=
+                                <input type="text" name="bpm2" size="4" />
+                                bpm
+                            </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Miller et al. (1993)</td>
+                                <td>HR<sub>max</sub>=
+                                <input type="text" name="bpm3" size="4" />
+                                bpm
+                            </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">USA Researchers (2007) </td>
+                                <td>HR<sub>max</sub>=
+                                    <input type="text" name="bpm4" size="4" />
+                                bpm
+                            </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">UK Researchers (2007) - Male Athletes </td>
+                                <td>HR<sub>max</sub>=
+                                    <input type="text" name="bpm5" size="4" />
+                                bpm
+                            </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">UK Researchers (2007) - Female Athletes </td>
+                                <td>HR<sub>max</sub>=
+                                    <input type="text" name="bpm6" size="4" />
+                                bpm
+                            </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">M. Gulati et al. (2010) - Female Athletes </td>
+                                <td>HR<sub>max</sub>=
+                                    <input type="text" name="bpm7" size="4" />
+                                    bpm
+                                </td>
+                            </tr>
+                        </table></td>
+                    </tr>
+                </table>
+            </form>
+        </body>
+        <footer> 
+            <a href src="index.html">Homepage</a> 
+        </footer>
+  </html>
