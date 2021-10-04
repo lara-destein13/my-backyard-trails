@@ -9,7 +9,7 @@ A website that finds trails near the user's area
 * JavaScript
 
 ## Website
-*(enter website link here)*
+https://lara-destein13.github.io/my-backyard-trails/
 
 ## Contribution
 Made with love by Lara DeStein, Charles Freeman, Benjamin Ramey, Will Rost, and Leigha McKay
