@@ -40,7 +40,7 @@ function vclear()
 }
 
 function rcalcv()
-<!-- calculate vo2 max-->
+// calculate vo2 max
 {
   var age = document.hrmax.rage.value;
   var bm = document.hrmax.rkg.value;
@@ -58,7 +58,7 @@ function rvclear()
 }
 
 function calcv()
-<!-- calculate vo2 max-->
+// calculate vo2 max
 {
   var h1 = document.hrmax.hrm.value;
   var h2 = document.hrmax.hrr.value;
@@ -110,7 +110,7 @@ function vclearp()
 
 function nt2dp(num,dp)
 {
-<!-- rounds num to dp decimal places -->
+// rounds num to dp decimal places 
   num=num*1+(0.55/Math.pow(10,dp));
   if (dp>0) dp=dp+1;
   b=Math.floor(num).toString().length+dp;
